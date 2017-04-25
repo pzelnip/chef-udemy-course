@@ -1,0 +1,10 @@
+Sec 3, Lec 14
+
+Resources
+
+- a resource is a statement of config policy, consists of type (ex: file, package, etc) and desired state (what permissions, what version, etc)
+
+
+Sec 3, Lec 14
+
+- chef-client is an agent running on all managed nodes that is responsible for applying the state you define in your cookbooks & recipes
