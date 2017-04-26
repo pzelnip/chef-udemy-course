@@ -8,3 +8,20 @@ Resources
 Sec 3, Lec 15
 
 - chef-client is an agent running on all managed nodes that is responsible for applying the state you define in your cookbooks & recipes
+
+Sec 4, Lec 19
+
+- A cookbook is the fundamental unit of configuration and policy distribution
+- defines a scenario, and contains everything required to support that scenario
+- not just recipes
+- versioned
+
+Sec 4, Lec 20
+
+- Berksfile for managing dependencies
+- really wish testing was covered in this course
+
+
+Sec 4, Lec 21
+
+- typically 1 cookbook per git repo (I'm violating this rule in the course as I'm tracking all my coursework in a single repo, I could've done submodules, but KISS)
