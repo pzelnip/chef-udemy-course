@@ -25,3 +25,34 @@ Sec 4, Lec 20
 Sec 4, Lec 21
 
 - typically 1 cookbook per git repo (I'm violating this rule in the course as I'm tracking all my coursework in a single repo, I could've done submodules, but KISS)
+
+
+Sec 5 Lec 24
+
+- syntax for specifying recipes in a runlist:
+
+chef-client -z --runlist "recipe[<cookbook>::<recipe>], recipe[<cookbook>::<recipe>]...."
+
+
+Sec 5 Lec 25
+
+chef-client -z --runlist "recipe[<cookbook>]" runs the default recipe
+
+Sec 6 Lec 28
+
+- ohai used to detect attributes of a node  Examples:
+
+ohai ipaddress
+ohai memory/total
+ohai cpu/0/mhz
+
+this all maps to the node object in recipes
+
+Sec 6 Lec 29
+
+node['ipaddress']
+node['memory']['total']
+
+String interpolation:
+
+"Foo bar baz is #{some_var}"
