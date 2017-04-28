@@ -1,5 +1,11 @@
-<h1>Hello World, this was created by Chef with a template</h1>
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World, this was created by Chef with a template</h1>
 
-<p>IP Address: <%= node['ipaddress'] %></p>
-<p>Hostname: <%= node['hostname'] %></p>
-
+    <p>IP Address: <%= node['ipaddress'] %></p>
+    <p>Hostname: <%= node['hostname'] %></p>
+  <body>
+</html>
