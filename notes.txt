@@ -56,3 +56,27 @@ node['memory']['total']
 String interpolation:
 
 "Foo bar baz is #{some_var}"
+
+Sec 7 Lec 32
+
+Template -- cookbook template is an embedded Ruby (ERB) template used to generate files.  The template resource can be used in recipes.
+
+put in templates/ directory
+
+Sec 7 Lec 33
+
+chef generate template <path> <name>
+
+Example syntax:
+
+<% if (50 + 50) == 100 %>
+50 + 50 == <%= 50 + 50 %>
+<% else %>
+At some point the universe changed
+<% end %>
+
+Gross (though pretty much what you normally see in a templating language)
+
+<%=  is "The angry squid", which means "insert the result of the expression into the template file"   How the hell does that look like a squid? :s
+
+Sec 7 Lec 34
